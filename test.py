@@ -1,14 +1,5 @@
 import subprocess
 import sys
-
-try:
-    import memory_profiler
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'memory-profiler'])
-finally:
-    import memory_profiler
-    
-from memory_profiler import memory_usage
 import pytest
 import Qualean
 from Qualean import qualean
